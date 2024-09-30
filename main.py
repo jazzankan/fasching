@@ -25,12 +25,9 @@ for o in option_values:
             if art_opt['value'] == str(o):
                 print(art_opt.get_text())
 
+with open('valuefile.json', 'w') as f:
+    json.dump(option_values,f)
 
-
-#with open('valuefile.json', 'w') as f:
-    #json.dump(option_values,f)
-
-#print(option_values)
 
 
 
